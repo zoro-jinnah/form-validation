@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+.form_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #e8e8e8;
+}
+form {
+  background-color: white;
+  width: 400px;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  max-width: 90%;
+}
+form h2 {
+  font-size: 32px;
+  color: #667285;
+  margin-bottom: 20px;
+}
+form h2 span {
+  color: #00b8c2;
+}
+.form_content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form_group .form_column {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: relative;
+}
+.form_group .form_column label {
+  font-size: 17px;
+  color: #667285;
+}
+.form_group .form_column input {
+  padding: 12px 35px;
+  width: calc(100%-70px);
+  outline: none;
+  border: 1px solid #bababa;
+  border-radius: 8px;
+  color: #667285;
+  font-size: 18px;
+}
+.form_group.error input{
+  border: 1px solid #ff602e;
+}
+.form_group.success input{
+  border: 1px solid #09c372;
+}
+.form_group .form_column i {
+  position: absolute;
+  top: 58%;
+  left: 12px;
+  color: #667285;
+  font-size: 17px;
+}
+.form_group .form_column #passbtn,.form_group .form_column #cpassbtn {
+position: absolute;
+top: 60%;
+right: 40px;
+font-size: 17px;
+}
+.form_group .error{
+  font-size: 14px;
+  color: #ff602e;
+  margin-top: 5px;
+}
+form  button{
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: #00b8c2;
+  border-radius: 8px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  cursor: pointer;
+
+}
